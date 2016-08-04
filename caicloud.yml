@@ -1,5 +1,5 @@
 integration:
-  image: golang:latest
+  image: golang:1.5.3
   commands:
     - cd /
     - echo "integration test commit webhook 123"
@@ -13,7 +13,7 @@ build:
   dockerfile_name: Dockerfile_publish
 
 postbuild:
-  image: golang:latest
+  image: golang:1.5.3
   commands:
     - echo "postbuild"
 
